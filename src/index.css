@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "spider font";
+  src: url("./fonts/spiderfont.ttf");
+  font-style: normal;
+}
+
+
+body{
+ @apply bg-slate-800;
+ @apply text-white
+
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-slate-800;      /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(212, 16, 16);    /* color of the scroll thumb */
+  border-radius: 1px;       /* roundness of the scroll thumb */
+  
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
